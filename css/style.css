@@ -4,12 +4,12 @@ width:100%;
 }
 
 p{
-    font-size: 17px;
+    font-size: 16px;
     line-height: 25px;
 }
 
 ul{
-    font-size: 17px;
+    font-size: 16px;
     line-height: 25px;
 }
 
@@ -118,8 +118,9 @@ h1{
  color: white;
 }
 
-.container{
-    background-color:#EEEEEE;
+.empty{
+    height: 20px;
+    background-color:white;
 }
 
 .grid{
@@ -201,6 +202,7 @@ h1{
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     text-align: center;
@@ -208,18 +210,26 @@ h1{
 
 .about-text{
     margin-left: 8%;
-    margin-right: 50%;
+    margin-right: 53%;
+    color: black;
+    text-align:left;
+}
+
+.about-text2{
+    margin-left: 8%;
+    margin-right: 53%;
     color: black;
     text-align:left;
 }
 
 .about-header{
-    font-size:25px;
+    font-family: 'Abel', sans-serif; 
+    font-size:28px;
     color: black;
 }
 
 .blogCard{
-    margin: 2% 15% 0% 15%;
+    margin: 0% 10% 0% 10%;
     Height:400px;
     background-image: url(../Images/hand.png);
     background-position: left;
@@ -277,7 +287,7 @@ flex-grow: 2;
 
 .contact-info{
     margin-top: 8px;
-    margin-botton: -8px;
+    margin-bottom: -8px;
 }
 
 .contact-stuff {
@@ -375,5 +385,57 @@ select{
 
 .foot-line{
     background-color: white;
-    height: 3px;
+    margin:20px auto;
+    width: 90%;
+    height: 1px;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .about-text2{
+        display: none;
+    }
+    
+  }
+
+@media only screen and (max-width: 600px) {
+    .aboutMe{
+       display: none;
+    }
+    .grid{
+        display:grid;
+        margin:2% 15% 2% 15%;
+        padding: 10px;
+        gap: 50px;
+        grid-template-columns: 100%;
+        align-content: center;
+  }
+
+  .contact-info{
+    margin-top: 8px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction:column;
+    align-content: center;
+
+}
+#social{
+    margin-top:10px;
+}
+
+.contact-stuff{
+    align-self: center;
+}
+
+.fa{
+   padding-left: 10px; 
+   padding-right: 10px;
+}
+
+.line{
+    display: none;
+}
+
+form{
+    margin: 0 20px 0 20px;
+    border: 2px solid white;
 }
