@@ -2,9 +2,17 @@ body{
 font-family: 'Lato', sans-serif;
 width:100%;
 }
+a{
+    text-decoration: none;
+}
 
 h2{
     margin-left: 8%;
+}
+
+h4{
+    text-decoration: none;
+    color: black;
 }
 
 p{
@@ -253,10 +261,9 @@ h1{
 }
 
 .factBox{
-    width: 100px;
-    height: 30px;
+    width: 120px;
+    height: 80px;
     margin-left: 5px;
-    padding: 10px;
     background-color: lightskyblue;
     text-align: center;
     position: relative;
@@ -266,6 +273,7 @@ h1{
 
 .factBox p{
   margin: 0;
+  font-size:14px;
   position: absolute;
   line-height:20px;
   top: 50%;
@@ -282,7 +290,7 @@ h1{
 
 .skillBox{
     width: 100px;
-    height: 30px;
+    height: 50px;
     margin-left: 5px;
     padding: 10px;
     background-color:gray;
@@ -356,6 +364,11 @@ flex-grow: 2;
     color: white;
     text-decoration: none;
 }
+
+.social-box2{
+padding-left: 10px;
+}
+
 .title-foot{
     font-weight: 900;
     color: #54C5D2;
@@ -470,6 +483,11 @@ select{
     height: 1px;
 }
 
+.codedWithLove{
+    color: white;
+    margin-left: 5%;
+}
+
 @media (min-width: 600px) and (max-width: 1024px) {
     .about-text2{
         display: none;
@@ -519,3 +537,4 @@ form{
     margin: 0 20px 0 20px;
     border: 2px solid white;
 }
+
