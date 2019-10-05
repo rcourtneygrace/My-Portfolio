@@ -25,6 +25,10 @@ ul{
     line-height: 25px;
 }
 
+.empty{
+height: 20px;
+}
+
  .black-top{
     background-color: #2d2d2d;
     height: 50px;
@@ -70,41 +74,51 @@ button:hover{
 
 .topPage{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-end;
     
+}
+
+.logo-box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
 }
 
 .logo{
     background-image: url(../Images/Name\ logo-01.png);
     height:60px;
     width: 450px;
-    margin-top: 20px;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
-    align-self: center;
+    align-items: flex-start;
     
 }
 
 .title{
-    align-self: center;
     font-size: 18px;
     margin-bottom: 5px;
-    margin-top: 0px;
+    margin-top:5px;
     letter-spacing: 2px;
     font-weight: 900;
     color: #283fe5;
+    align-self: center;
 }
 
 .topNav{
-    align-self: center;
     font-size: 15px;
+    align-self: flex-end;
+    padding-top:10px;
+    padding-bottom:20px;
+    margin-right: 2%;
 }
 
 .home, .port, .about,.blog, .video {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:10px;
+    padding-bottom:30px;
     text-decoration: none;
     color: black; 
 }
@@ -116,13 +130,15 @@ button:hover{
     background-color: black;
     height: 2px;
     margin: 10px;
+    width: 40%;
+    margin: 0 auto;
    
 }
 
 .hero-image{
-    background-image: url(../Images/Hero\ 1.png);
+    background-image: url(../Images/Hero\ 2.png);
     margin-top: 0px;
-    height: 400px;
+    height: 500px;
     width: 100%;
     background-position: left;
     background-repeat: no-repeat;
@@ -134,7 +150,6 @@ button:hover{
 }
 
 .hero-text{
-    background-color:rgba(0,0,0,0.8);
     padding: 30px;
     margin-right:10%;
     border-radius: 15px;
@@ -343,9 +358,9 @@ footer{
     height: auto;
     line-height: 60px;
     background-color: #2d2d2d;
-    margin-top: 50px;
+    margin-top: 70px;
     padding-bottom: 30px;
-    padding-top:10px;
+    padding-top:50px;
 }
 
 form{
@@ -355,8 +370,9 @@ flex-grow: 2;
 .contact-info{
     font-size: 40px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin: 0 25% 0 25%;
+    margin: 5% 25% 5% 25%;
     color: white;
 }
 
